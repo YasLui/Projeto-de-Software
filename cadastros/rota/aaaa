@@ -1,0 +1,38 @@
+ label {
+            margin-bottom: 5px;
+            font-size: 16px;
+            
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #34495D;
+            border-radius: 4px;
+            background-color: #34495D;
+            color: #F0F0F0;
+            margin-bottom: 15px;
+            font-size: 14px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form-group {
+            width: 48%;
+            
+        }
+
+        button.submit-button {
+            background-color: #4F6F8C;
+            width: 150px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        button.submit-button:hover {
+            background-color: #77ABD9;
+        }

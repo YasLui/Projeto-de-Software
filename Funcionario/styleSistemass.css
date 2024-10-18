@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 0;
+}
+.voltar {
+    padding: 10px;
+    color: #ffffff;
+}
+.voltar:hover {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 40px;
+}
+
+.box-search {
+    margin: 40 px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px;
+
+}
+
+#city,#name{
+    background-color: rgb(211, 211, 211)  ;
+}
+
+
+
+input[type="search"] {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+.button-container{
+    padding-top: 15px;
+    padding-left: 160px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e27d3b;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #dd5800;
+}
+
+.table {
+    width: 75%;
+    border-collapse: collapse;
+    margin: 20px auto;
+   text-align: center;
+}   
+
+.table thead {
+    background-color: #333;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: left;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #1f1f1f;
+}
+
+.table tbody tr:hover {
+    background-color: #333;
+}
+
+.teste a {
+    text-decoration: none; 
+}
+
+.teste svg {
+    margin: 0;
+    padding: 0;
+    font-size: 24px; /* Ajuste conforme necessário */
+    vertical-align: middle; /* Alinha verticalmente */ 
+}
+
+.btn {
+    background-color: #467e3a;
+}
+
+.btn:hover {
+    background-color: #1c5c0e;
+}

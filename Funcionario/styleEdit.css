@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2e3a40; /* Cor de fundo clara */
+    color: #333; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+}
+  
+
+h1 {
+    color: #e27d3b; /* Cor verde para a legenda */
+    text-align: center;
+    margin-top: 2px;
+}
+
+a { 
+    text-decoration: none;
+    display: inline-block;  
+    margin: 20px;
+}
+
+.voltar{
+    color: #ffffff;
+ }
+ 
+
+
+.box {
+    width: 100%;
+    padding: 20px;
+    background-color: #2E4040; /* Fundo branco para a caixa */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    color: #ccc;
+    border: none;
+    padding: 0;
+}
+
+
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.col {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.col-rua {
+    flex: 3;
+    margin-right: 10px;
+}
+
+.col-num {
+    flex: 1;
+}
+
+.inputlabel {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputuser, .inputrua, .inputnum {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 4px; /* Bordas arredondadas */
+    box-sizing: border-box;
+    background-color: #2E4040;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+button.submit {
+    margin-left: auto;
+    display: block;
+    transition: 1s ease;
+}
+
+.submit {
+    background-color: #F28705; /* Fundo verde para o botão */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white; 
+    font-size: 16px;
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: #bd6800;
+}

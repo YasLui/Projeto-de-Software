@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  margin: auto;
+  padding: 20px;
+}
+
+.btn {
+  background-color: #ff9100;
+  text-shadow: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.btn2 {
+  background-color: #ff9100;
+  color: white;
+  text-shadow: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #df6b05;
+  transform: scale(1.1);
+}
+
+header {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centralizar horizontalmente */
+  padding: 25px 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul a {
+  color: rgb(255, 255, 255);
+  text-shadow: black -1px 0;
+  margin: 0 15px;
+  text-transform: uppercase;
+  font-size: 20px;
+  display: block;
+  max-lines: 200px;
+}
+
+nav ul a:not(.btn)::after {
+  content: "";
+  background-color: rgb(255, 145, 0);
+  height: 3px;
+  width: 0%;
+  display: block;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+nav ul a:hover::after {
+  width: 100%;
+}
+
+.imagem {
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 50px;
+  color: white;
+}
+
+p {
+  padding: 40px;
+  display: flex;
+}
+
+.btn2:hover {
+  font-size: 21px;
+  background-color: #ff9100;
+}
+
+.primeira {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centralizar verticalmente */
+  text-align: center;
+  padding: 0 10px;
+}
+
+.primeira .primeira-text {
+  margin: 0;
+}
+
+.primeira .primeira-text h1 {
+  font-size: 90px;
+  color: white;
+}
+
+.primeira .primeira-text p {
+  font-size: 20px;
+  color: rgb(243, 222, 153);
+  margin: 18px 0;
+}
+
+footer {
+  padding: 54px 0;
+}
+
+/* Media Queries */ 
+@media (max-width: 1200px) {
+  nav {
+    display: flex;
+    padding-left: 10%; /* Ajusta a distância do menu nas telas médias */
+  }
+}
+
+@media (max-width: 992px) {
+  nav ul {
+    flex-direction: column;
+    display: flex;
+  }
+  nav ul a {
+    margin: 10px 0;
+  }
+  .primeira .primeira-text h1 {
+    font-size: 60px;
+  }
+  .primeira .primeira-text p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn, .btn2 {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  nav ul a {
+    font-size: 16px;
+  }
+
+  .primeira .primeira-text h1 {
+    font-size: 40px;
+  }
+
+  .primeira .primeira-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  nav ul {
+    padding-left: 0;
+    
+  }
+
+  nav ul a {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .primeira .primeira-text h1 {
+    font-size: 30px;
+  }
+
+  .primeira .primeira-text p {
+    font-size: 14px;
+  }
+}

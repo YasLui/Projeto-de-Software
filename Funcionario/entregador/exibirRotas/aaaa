@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.package-box {
+    border: 1px solid #444; /* Borda mais escura */
+    background-color: #1e1e1e; /* Fundo dos pacotes */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.package-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.package-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0d6efd; /* Azul claro */
+    margin-bottom: 10px;
+}
+
+.package-box div {
+    margin-bottom: 8px;
+    color: #ccc; /* Texto claro */
+}
+
+.toggle-button {
+    color: #0d6efd;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.form-container {
+    display: none;
+    margin-top: 10px;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e0e0e0; /* Texto claro */
+}
+
+.form-field input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #444; /* Borda mais escura */
+    border-radius: 5px;
+    background-color: #333; /* Fundo do input */
+    color: #e0e0e0; /* Texto do input */
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #0d6efd; /* Azul claro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #0a58ca; /* Azul escuro */
+}
+
+.finalize-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745; /* Verde claro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.finalize-button:hover {
+    background-color: #218838; /* Verde escuro */
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #0d6efd; /* Azul claro */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.voltar {
+    padding: 10px;
+    color: #ffffff;
+}a
+.voltar:hover {
+    width: 100%;
+}

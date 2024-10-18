@@ -1,0 +1,102 @@
+/* Reset básico */
+body, h1, form, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Mantive a fonte Roboto */
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 600px; /* Aumentei um pouco a largura máxima */
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center; /* Centraliza o título */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin-bottom: 8px;
+    color: #e0e0e0;
+}
+
+.inputbox {
+    margin-bottom: 20px;
+}
+
+.inputbox select,
+.inputbox input {
+    background-color: #333333;
+    border: 1px solid #444444;
+    border-radius: 4px;
+    color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.inputbox select:disabled,
+.inputbox input:disabled {
+    background-color: #444444; /* Mudança na cor do fundo para campos desabilitados */
+    color: #666666;
+}
+
+.error {
+    color: #FF4C4C;
+    background-color: #2E2E2E;
+    border: 1px solid #FF4C4C;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+button.submit-button {
+    background-color: #F27405; /* Cor do botão */
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button.submit-button:hover {
+    background-color: #3700b3; /* Cor ao passar o mouse */
+}
+
+a.voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.voltar svg {
+    vertical-align: middle;
+}
+
+a.voltar:hover {
+    color: #F27405; /* Cor ao passar o mouse */
+}

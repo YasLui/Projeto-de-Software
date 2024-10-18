@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/BDExpresso/Funcionario/entregador/css/styleees.css">
+    <title>Menu Responsivo</title>
+</head>
+
+<body>  
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="/BDExpresso/Funcionario/gerente/imgExpresso.png" class="imagem">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/BDExpresso/Funcionario/entregador/exibirRotas/exibir.php" class="nav-link">Rotas</a></li>
+                    <li class="nav-item"><a href="/BDExpresso/Funcionario/entregador/exibirRotas/exibir_pacotes.php" class="nav-link">Pacotes</a></li>
+                </ul>
+            </div>
+            <button class="cta" onclick="window.location.href='/BDExpresso/Principal/Index/index.html'">
+                <span class="hover-underline-animation"> Sair </span>
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="16" height="16" fill="#d5d5d2" 
+                    class="bi bi-arrow-bar-left" 
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" 
+                    d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5M10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5"/>
+                </svg>
+            </button>
+            
+              
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                        <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/BDExpresso/Funcionario/exibirRotas/exibir.php/" class="nav-link">Rotas</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Pacotes</a></li>
+            </ul>
+
+            <button>
+                <p>Sair</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  ></path>
+                </svg>
+              </button>
+        </div>
+    </header>
+
+    <script>
+        function menuShow() {
+            let menuMobile = document.querySelector('.mobile-menu');
+            let icon = document.querySelector('.icon path'); // Seleciona o elemento <path> dentro do SVG
+
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+
+                // Alterar para o ícone de menu (três linhas)
+                icon.setAttribute('d', 'M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z');
+            } else {
+                menuMobile.classList.add('open');
+
+                // Alterar para o ícone de fechar (X)
+                icon.setAttribute('d', 'M 10 10 L 40 40 M 40 10 L 10 40');
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+/* Reset básico */
+body, h1, form, label, select, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  a.voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  a.voltar svg {
+    vertical-align: middle;
+  }
+  
+  a.voltar:hover {
+    color: #a05f26;
+  }
+  
+  .box {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  fieldset {
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  legend {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .inputbox {
+    margin-bottom: 15px;
+  }
+  
+  .inputlabel {
+    display: block;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+  }
+  
+  .inputuser {
+    background-color: #333333;
+    border: 1px solid #444444;
+    border-radius: 4px;
+    color: #e0e0e0;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  button.submit {
+    background-color: #d88135;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  button.submit:hover {
+    background-color: #F27405;
+  }
+  

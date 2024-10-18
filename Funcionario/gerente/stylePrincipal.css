@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(/BDExpresso/Principal/Imagens/Background\ Rosario.jpg);
+  background-size: cover;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+}
+.imagem{
+  height: 30px;
+  padding-right: 4px;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  background-color: #0d1117;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  background-color: #0d1117;
+  justify-content: center;
+  border-radius: 5px;
+  gap: 7.5px;
+}
+
+.value {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: white;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+.welcome-message {
+  margin-right: 180px; /* Ajuste o valor conforme necessário */
+}
+.value:not(:active):hover,
+.value:focus {
+  background-color: #21262c;
+}
+
+.value:focus,
+.value:active {
+  background-color: #1a1f24;
+  outline: none;
+}
+
+.value::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  width: 100%;
+  height: 3px;
+  background-color: #e27d3b;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.value:focus::before,
+.value:active::before {
+  opacity: 1;
+}
+
+.value svg {
+  width: 15px;
+}
+
+.content {
+  padding: 20px;
+}
+.tabs {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #e27d3b;
+  padding-bottom: 5px;
+}
+.tab {
+  cursor: pointer;
+}
+.active-tab {
+  color: #e27d3b;
+  font-weight: bold;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.paste-button {
+  position: relative;
+  display: block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: white;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.dropdown-content {
+  display: none;
+  font-size: 13px;
+  position: absolute;
+  z-index: 1;
+  min-width: 200px;
+  background-color: #212121;
+  border: 2px solid #636363;
+  border-radius: 0px 15px 15px 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: #cfcfcf;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  transition: 0.1s;
+}
+
+.dropdown-content a:hover {
+
+  color: #e27d3b;
+}
+
+.dropdown-content a:focus {
+  background-color: #212121;
+
+}
+
+.dropdown-content .cad:hover {
+  border-radius: 0px 13px 0px 0px;
+
+}
+
+.dropdown-content .cad:hover {
+  border-radius: 0px 0px 13px 13px;
+}
+
+.paste-button:hover button {
+  border-radius: 15px 15px 0px 0px;
+  border-bottom: 1px solid #e27d3b;
+}
+
+.paste-button:hover .dropdown-content {
+ 
+  display: block;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  width: 100%;
+  height: 3px;
+  background-color: #2f81f7;
+  border-radius: 5px;
+  opacity: 0;
+}
+.cta span {
+  color: white; /* Muda a cor do texto para branco */
+}
+
+
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
